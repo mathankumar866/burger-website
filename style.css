@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 2em;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: .2s;
+}
+
+.nav-link li a:hover {
+    border-bottom: 3px solid red;
+}
+
+.menubar {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
+.banner {
+    background: url(./Images/bg1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+.bannercontent {
+    text-align: center;
+    max-width: 50%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+.bannerimage img {
+    width: 400px;
+    object-fit: contain;
+    animation: bounce 4s forwards infinite;
+}
+
+.bannercontent h1 {
+    margin-bottom: 15px;
+}
+
+.btn-1 {
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: burlywood;
+}
+
+.services {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services img {
+    height: 130px;
+    object-fit: contain;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 50px;
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: justify;
+}
+
+.about-content h1 {
+    padding-bottom: 30px;
+}
+
+.about-content p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.about img {
+    width: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.box {
+    width: 250px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.box img {
+    height: 180px;
+    object-fit: contain;
+}
+
+.cards {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box h3 {
+    padding-bottom: 10px;
+}
+
+.box:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carousel {
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.img_banner {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+
+/********************  Start of Chef Section ********************/
+
+.chefsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 50px;
+    margin-bottom: 80px;
+}
+
+.chefdetails {
+    background-color: black;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.chefimage {
+    margin-top: -20px;
+}
+
+.cheftext {
+    text-align: center;
+    padding: 10px 40px;
+    width: 90%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cheftext h1,
+p {
+    margin-top: 20px;
+}
+
+.underlined {
+    background-color: white;
+    height: 1px;
+    width: 280px;
+    margin-left: 110px;
+    margin-top: 7px;
+
+}
+
+/********************   End of Chef Section ********************/
+
+
+/********************   Start of Form Section ********************/
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.register {
+    display: grid;
+}
+
+.btnsubmit {
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 140px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btnsubmit:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.register input {
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+/********************   End of Form Section ********************/
+
+/*  Start of Footer Section */
+
+.footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 30px 10px;
+}
+
+.footerdivone p {
+    text-align: center;
+}
+
+.footerdivone span {
+    color: red;
+}
+
+.footerdivtwo p,
+.footerdivthree p,
+.footerdivfour p {
+    color: grey;
+    cursor: pointer;
+}
+
+.footercontent {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 40px 10px;
+    padding: 40px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*  End of Footer Section */
+
+
+@media screen and (max-width:960px) {
+
+    .nav-link {
+        position: absolute;
+        display: grid;
+        top: 80px;
+        background-color: rgb(255, 255, 255);
+        height: 50vh;
+        width: 100%;
+        text-align: center;
+        left: -100%;
+        transition: .5s;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .nav-link.showmenu {
+        left: 0;
+    }
+
+    .bannercontent {
+        max-width: 80%;
+    }
+
+    .banner {
+        margin: 50px 0px 0px;
+    }
+
+    .btn-1 {
+        margin-bottom: 30px;
+    }
+
+    .services {
+        margin-top: 100px;
+    }
+
+    .about-content {
+        max-width: 80%;
+    }
+    
+    .form{
+        flex-wrap: wrap;
+        margin: 20px 0px;
+    }
+    .map{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .register input{
+        width: 350px;
+        margin-top: 20px;
+    }
+    .btnsubmit{
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .services {
+        margin-top: 200px;
+    }
+
+    .about-content h1 {
+        text-align: center;
+    }
+    .carousel{
+        display: none;
+    }
+
+    .chefdetails{
+        width: 300px;
+        text-align: center;
+    }
+    .cheftext {
+        text-align: center;
+        padding: 10px 10px;
+        width: 90%;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+}
